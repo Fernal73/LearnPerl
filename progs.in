@@ -1,0 +1,4 @@
+./simple.pl < input.txt
+./milestokm.pl < marathon.txt
+./nonzero.pl < num.txt
+./nonzero.pl < num1.txt

@@ -3,7 +3,7 @@ use strict;
 print ("Enter a number:\n");
 my $number = <STDIN>;
 chop ($number);
-print ("Number: " + $number);
+printf ("Number: %f\n",$number);
 
 if ($number) {
   print ("The number is not zero.\n");
