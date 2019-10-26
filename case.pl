@@ -2,8 +2,8 @@
 use strict;
 use warnings;
 our $VERSION = 1.0;
-print("Enter a line of input:\n");
+print "Enter a line of input:\n";
 my $inputline = <>;
-print("uppercase: \U$inputline\E\n");
-print("lowercase: \L$inputline\E\n");
-print("as a sentence: \L\u$inputline\E\n");
+print "uppercase: \U$inputline\E\n";
+print "lowercase: \L$inputline\E\n";
+print "as a sentence: \L\u$inputline\E\n";

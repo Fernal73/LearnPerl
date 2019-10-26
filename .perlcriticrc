@@ -14,5 +14,8 @@ severity = 5
 severity = 2
  
 [InputOutput::RequireCheckedSyscalls]
-     functions = :builtins
-     exclude_functions = print 
+functions = :builtins
+exclude_functions = print
+
+[ValuesAndExpressions::RequireNumberSeparators]
+min_value = 100000
