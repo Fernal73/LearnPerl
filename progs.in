@@ -4,3 +4,9 @@
 ./nonzero.pl < num1.txt
 ./equals.pl < num3.txt
 ./equals.pl < num4.txt
+./numbers.pl < num3.txt
+./numbers.pl < num4.txt
+./numbers.pl < num5.txt
+./numbers.pl < num6.txt
+./while.pl
+./until.pl < until.txt
