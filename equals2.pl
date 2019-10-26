@@ -1,11 +1,12 @@
 #!/usr//bin/env perl
 use strict;
 use warnings;
+our $VERSION = 1.0;
 print("Enter a number:\n");
-my $number1 = <STDIN>;
+my $number1 = <>;
 chop($number1);
 print("Enter another number:\n");
-my $number2 = <STDIN>;
+my $number2 = <>;
 chop($number2);
 
 if ( $number1 == $number2 ) {

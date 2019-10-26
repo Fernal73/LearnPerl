@@ -1,11 +1,12 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
+our $VERSION = 1.0;
 
 # this program reads a line of input, and writes the line back out
 # read a line of input
-my $inputline = <STDIN>;
+my $inputline = <>;
 
 # write the line out
-print($inputline );
+print $inputline;
 

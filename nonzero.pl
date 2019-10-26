@@ -1,8 +1,9 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
+our $VERSION = 1.0;
 print("Enter a number:\n");
-my $number = <STDIN>;
+my $number = <>;
 chop($number);
 printf( "Number: %f\n", $number );
 

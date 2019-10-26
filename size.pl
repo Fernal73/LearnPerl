@@ -1,6 +1,7 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
+our $VERSION = 1.0;
 my $value = 1234567890;
 print( "first value is ", $value, "\n" );
 $value = 1234567890123456;

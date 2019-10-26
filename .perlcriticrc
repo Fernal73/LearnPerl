@@ -1,0 +1,18 @@
+#--------------------------------------------------------------
+# I think these are really important, so always load them
+ 
+[TestingAndDebugging::RequireUseStrict]
+severity = 5
+ 
+[TestingAndDebugging::RequireUseWarnings]
+severity = 5
+ 
+#--------------------------------------------------------------
+# I think these are less important, so only load when asked
+ 
+[Variables::ProhibitPackageVars]
+severity = 2
+ 
+[InputOutput::RequireCheckedSyscalls]
+     functions = :builtins
+     exclude_functions = print 

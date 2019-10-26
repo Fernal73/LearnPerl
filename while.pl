@@ -1,6 +1,7 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
+our $VERSION = 1.0;
 my $done  = 0;
 my $count = 1;
 print("This line is printed before the loop starts.\n");
