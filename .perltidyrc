@@ -1,8 +1,8 @@
 -b
 -log
 -i=2
--w
 -bt=2
 -syn
 -sbt=2
 -lp
+-w
