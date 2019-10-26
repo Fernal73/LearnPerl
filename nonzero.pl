@@ -3,6 +3,8 @@ use strict;
 print ("Enter a number:\n");
 my $number = <STDIN>;
 chop ($number);
+print ("Number: " + $number);
+
 if ($number) {
   print ("The number is not zero.\n");
 }
