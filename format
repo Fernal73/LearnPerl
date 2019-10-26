@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+perltidy ./*.pl
+declare -i ret=0
+ret="$?"
+if [[ "$ret" -eq 0 ]]
+then 
+  rm ./*.bak
+fi
+exit "$ret"

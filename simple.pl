@@ -1,7 +1,11 @@
 #!/usr/bin/env perl
 use strict;
+use warnings;
+
 # this program reads a line of input, and writes the line back out
-my $inputline = <STDIN>; 
 # read a line of input
-print( $inputline ); 
+my $inputline = <STDIN>;
+
 # write the line out
+print($inputline );
+
