@@ -10,3 +10,4 @@
 ./numbers.pl < num6.txt
 ./while.pl
 ./until.pl < until.txt
+./size.pl
