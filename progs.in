@@ -17,3 +17,6 @@
 ./concat.pl < lines.txt
 ./list.pl
 ./rand.pl
+./listnum.pl < range.txt
+./listnum.pl < range2.txt
+./listnum.pl < range3.txt
