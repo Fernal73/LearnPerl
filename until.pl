@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 use Readonly;
-our $VERSION = 1.0;
+our $VERSION = '1.00';
 Readonly my $SOLUTION => 43;
 print "What is 17 plus 26?\n";
 

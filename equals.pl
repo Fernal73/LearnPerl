@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
-our $VERSION = 1.0;
+our $VERSION = '1.00';
 print "Enter a number:\n";
 my $number1 = <>;
 chop $number1;

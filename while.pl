@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 use Readonly;
-our $VERSION = 1.0;
+our $VERSION = '1.00';
 Readonly my $END => 3;
 my $done  = 0;
 my $count = 1;

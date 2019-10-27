@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 use Readonly;
-our $VERSION = 1.0;
+our $VERSION = '1.00';
 Readonly my $MILESPERKM => 0.6214;
 Readonly my $KMSPERMILE => 1.609;
 print "Enter the distance to be converted:\n";

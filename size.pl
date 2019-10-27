@@ -6,7 +6,7 @@ Readonly my $FIRST_VALUE  => 1_234_567_890;
 Readonly my $SECOND_VALUE => 1_234_567_890_123_456;
 Readonly my $THIRD_VALUE  => 12_345_678_901_234_567_890;
 Readonly my $FOURTH_VALUE => 123_456_789_012_345_678_901_234_567_890;
-our $VERSION = 1.0;
+our $VERSION = '1.00';
 my $value = $FIRST_VALUE;
 print "first value is $value\n";
 $value = $SECOND_VALUE;

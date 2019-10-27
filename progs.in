@@ -11,3 +11,4 @@
 ./while.pl
 ./until.pl < until.txt
 ./size.pl
+./undefined.pl
