@@ -9,11 +9,11 @@ my $count     = 1;
 my $inputline = <>;
 chop $inputline;
 my @array;
-while ( $inputline ne q{} && $inputline ne '' ) {
+while ( $inputline ne q{} && $inputline ne q{} ) {
   @array[$count - 1] = $inputline;
   $count++;
   $inputline = <>;
-  if ( defined($inputline) ) {
+  if ( defined $inputline ) {
     chop $inputline;
   }
   else {
