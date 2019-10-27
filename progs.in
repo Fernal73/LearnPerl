@@ -14,3 +14,4 @@
 ./undefined.pl
 ./twospower.pl < num.txt
 ./fp.pl
+./concat.pl < lines.txt
