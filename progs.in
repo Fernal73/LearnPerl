@@ -20,3 +20,6 @@
 ./listnum.pl < range.txt
 ./listnum.pl < range2.txt
 ./listnum.pl < range3.txt
+./bubble.pl < unsorted.txt
+./bubbleint.pl < unsortedint.txt
+./single.pl < unsorted.txt
