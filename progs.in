@@ -12,3 +12,4 @@
 ./until.pl < until.txt
 ./size.pl
 ./undefined.pl
+./twospower.pl < num.txt
