@@ -13,3 +13,4 @@
 ./size.pl
 ./undefined.pl
 ./twospower.pl < num.txt
+./fp.pl
