@@ -15,6 +15,4 @@ if ( $value1 == $value2 ) {
 else {
   print "value 1 does not equal value 2\n";
 }
-printf "value 1 is %f, value2 is %f\n", $value1, $value2;
-printf "value 1 is %e, value2 is %e\n", $value1, $value2;
-printf "value 1 is %g, value2 is %g\n", $value1, $value2;
+printf "because ... value 1 is %.20f, value2 is %.20f\n", $value1, $value2;
