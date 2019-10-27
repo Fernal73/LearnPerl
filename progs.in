@@ -16,3 +16,4 @@
 ./fp.pl
 ./concat.pl < lines.txt
 ./list.pl
+./rand.pl
