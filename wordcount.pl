@@ -6,8 +6,8 @@ my $wordcount = 0;
 my $line      = <>;
 while ( $line ne q{} ) {
   chomp $line;
-  my @array = split / +/ms, $line;
-  $wordcount += @array;
+  my @array = split / +/mxs, $line;
+  $wordcount += ( @array > 0 && $array[0] eq q{} ? @array - 1 : @array );
   $line = <>;
   if ( !defined $line ) {
     last;
