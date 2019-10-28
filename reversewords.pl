@@ -9,12 +9,8 @@ chomp @input;
 my $currline = 1;
 my @words;
 while ( $currline <= @input ) {
-  last unless defined $input[$currline - 1];
   @words = split / /ms, $input[$currline - 1];
   @words = reverse @words;
-  if ( !defined $input[$currline - 1] ) {
-    last;
-  }
   $input[$currline - 1] = join q{ }, @words, "\n";
   $currline++;
 }
