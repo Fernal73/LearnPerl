@@ -7,14 +7,14 @@ our $VERSION = '1.00';
 print "Enter the array to sort, one item at a time.\n";
 my $count     = 1;
 my $inputline = <>;
-chop $inputline;
+chomp $inputline;
 my @array;
 while ( $inputline ne q{} && $inputline ne q{} ) {
   @array[$count - 1] = $inputline;
   $count++;
   $inputline = <>;
   if ( defined $inputline ) {
-    chop $inputline;
+    chomp $inputline;
   }
   else {
     last;

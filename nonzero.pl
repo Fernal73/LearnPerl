@@ -4,7 +4,7 @@ use warnings;
 our $VERSION = '1.00';
 print "Enter a number:\n";
 my $number = <>;
-chop $number;
+chomp $number;
 printf "Number: %f\n", $number;
 
 if ($number) {

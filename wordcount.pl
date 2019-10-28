@@ -5,7 +5,7 @@ our $VERSION = '1.00';
 my $wordcount = 0;
 my $line      = <>;
 while ( $line ne q{} ) {
-  chop $line;
+  chomp $line;
   my @array = split / /ms, $line;
   $wordcount += @array;
   $line = <>;

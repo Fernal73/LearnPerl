@@ -7,5 +7,5 @@ our $VERSION = '1.00';
 # exponent n
 print 'Enter the exponent to use: ';
 my $exponent = <>;
-chop $exponent;
+chomp $exponent;
 print "Two to the power $exponent is ", 2**$exponent, "\n";

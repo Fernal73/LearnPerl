@@ -9,12 +9,12 @@ print "What is 17 plus 26?\n";
 # the correct answer
 
 my $input_answer = <>;
-chop $input_answer;
+chomp $input_answer;
 printf "Number input: %f\n", $input_answer;
 while ( $input_answer != $SOLUTION ) {
   print "Wrong! Keep trying!\n";
   $input_answer = <>;
-  chop $input_answer;
+  chomp $input_answer;
   printf "Number input: %f\n", $input_answer;
 }
 print "You've got it!\n";

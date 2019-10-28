@@ -4,11 +4,11 @@ use warnings;
 our $VERSION = '1.00';
 print "Enter a number:\n";
 my $number1 = <>;
-chop $number1;
+chomp $number1;
 printf "1st number: %f\n", $number1;
 print "Enter another number:\n";
 my $number2 = <>;
-chop $number2;
+chomp $number2;
 printf "2nd number: %f\n", $number2;
 
 if ( $number1 == $number2 ) {
