@@ -31,3 +31,5 @@
 ./search.pl The words.txt eords.txt cat.txt
 ./search.pl The *.txt
 cat *.txt | ./search.pl 10
+./polite.pl < please.txt
+./polite.pl < words.txt
