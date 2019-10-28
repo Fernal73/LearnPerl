@@ -25,3 +25,9 @@
 ./single.pl < unsorted.txt
 ./reversewords.pl < words.txt
 ./printfile.pl
+./search.pl The < words.txt
+./search.pl
+./search.pl The eords.txt cat.txt< words.txt
+./search.pl The words.txt eords.txt cat.txt
+./search.pl The *.txt
+cat *.txt | ./search.pl 10
