@@ -4,7 +4,7 @@ use warnings;
 our $VERSION = '1.00';
 my @input = <>;
 chomp @input;
-@input = grep $_ ne q{},@input;
+
 # first, reverse the order of the words in each line
 my $currline = 1;
 my @words;

@@ -9,7 +9,7 @@ my $count     = 1;
 my $inputline = <>;
 chomp $inputline;
 my @array;
-while ( $inputline ne q{} && $inputline ne q{} ) {
+while ( $inputline ne q{} ) {
   @array[$count - 1] = $inputline;
   $count++;
   $inputline = <>;
