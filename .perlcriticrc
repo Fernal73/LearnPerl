@@ -17,5 +17,8 @@ severity = 2
 functions = :builtins
 exclude_functions = print
 
+[Variables::ProhibitPunctuationVars]
+allow = $@ $!
+
 [ValuesAndExpressions::RequireNumberSeparators]
 min_value = 100000

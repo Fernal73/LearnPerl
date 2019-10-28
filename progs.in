@@ -24,3 +24,4 @@
 ./bubbleint.pl < unsortedint.txt
 ./single.pl < unsorted.txt
 ./reversewords.pl < words.txt
+./printfile.pl
