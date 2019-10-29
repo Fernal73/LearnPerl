@@ -33,3 +33,6 @@
 cat *.txt | ./search.pl 10
 ./polite.pl < please.txt
 ./polite.pl < words.txt
+cat *.txt | ./thecount.pl
+echo | ./thecount.pl
+echo -n '' | ./thecount.pl

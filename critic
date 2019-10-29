@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
+declare -i ret=0
+./format
 perlcritic -brutal --quiet . &> critic.LOG
-exit "$?"
+ret="$?"
+if [[ "$ret" -ne 0 ]]
+then
+  cat critic.LOG
+fi
+exit "$ret"
