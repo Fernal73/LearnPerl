@@ -35,7 +35,7 @@ sub is_29_feb {
 
 sub get_year {
   my ($date) = @_;
-  if ( $date =~ /([\d]+)/xms ) {
+  if ( $date =~ /([\d]+)/xmso ) {
     return $1;
   }
 }
