@@ -5,9 +5,8 @@ our $VERSION = '1.00';
 
 ## no critic (ProhibitMagicNumbers)
 
-sub is_leap_year() {
-  my @args = unpack;
-  my $year = $args[0];
+sub is_leap_year {
+  my ($year) = @_;
   if ( $year % 4 != 0 ) {
     return;
   }
@@ -20,11 +19,18 @@ sub is_leap_year() {
   return;
 }
 
-sub is_29_feb() {
+sub is_29_feb {
 
-  my @args = unpack;
-  my $date = $args[0];
-
+  my ($date) = @_;
+  my $day   = substr $date, -2;
+  my $month = substr $date, -5, 2;
+  if ( $day != 29 ) {
+    return;
+  }
+  if ( $month == 2 ) {
+    return 1;
+  }
+  return;
 }
 
 # handle 31-day months
@@ -40,6 +46,7 @@ my $date;
 my $match;
 my $olddate;
 while ( $date = <> ) {
+  no warnings 'numeric';
   last if !defined $date;
   chomp $date;
 
@@ -49,10 +56,26 @@ while ( $date = <> ) {
   # check for a valid but non-20th century date
   $olddate = $date =~ /^(\d{1,4})(.)($md1|$md2|$md3)$/mxs;
   if ($match) {
-    print "$date is a valid date\n";
+    if ( !is_29_feb($date) ) {
+      print "$date is a valid date\n";
+      next;
+    }
+    if ( is_29_feb($date) && is_leap_year( int $date ) ) {
+      print "$date is a valid date\n";
+      next;
+    }
+    print "$date is a not a valid date\n";
   }
   elsif ($olddate) {
-    print "$date is not in the 20th century\n";
+    if ( !is_29_feb($date) ) {
+      print "$date is a valid date but not in the 20th century.\n";
+      next;
+    }
+    if ( is_29_feb($date) && is_leap_year( int $date ) ) {
+      print "$date is a valid date but not in the 20th century.\n";
+      next;
+    }
+    print "$date is a not a valid date.\n";
   }
   else {
     print "$date is not a valid date\n";
