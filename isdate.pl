@@ -3,6 +3,30 @@ use strict;
 use warnings;
 our $VERSION = '1.00';
 
+## no critic (ProhibitMagicNumbers)
+
+sub is_leap_year() {
+  my @args = unpack;
+  my $year = $args[0];
+  if ( $year % 4 != 0 ) {
+    return;
+  }
+  if ( $year % 4 == 0 && $year % 100 != 0 ) {
+    return 1;
+  }
+  if ( $year % 400 == 0 ) {
+    return 1;
+  }
+  return;
+}
+
+sub is_29_feb() {
+
+  my @args = unpack;
+  my $date = $args[0];
+
+}
+
 # handle 31-day months
 my $md1 = '(0[13578]|1[02])\\2(0[1-9]|[12]\\d|3[01])';
 
