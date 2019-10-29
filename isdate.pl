@@ -3,7 +3,7 @@ use strict;
 use warnings;
 our $VERSION = '1.00';
 
-## no critic (ProhibitMagicNumbers,)
+## no critic (ProhibitMagicNumbers)
 
 sub is_leap_year {
   my ($year) = @_;
