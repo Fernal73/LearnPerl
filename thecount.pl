@@ -10,11 +10,11 @@ my $line = <>;
 if ( !defined $line ) {
   croak 'No input provided.';
 }
+my @words;
 while ( $line ne q{} ) {
-  if ( $line =~ /\bthe\b/ixsm ) {
-    $thecount += 1;
-  }
+  @words = split /\bthe\b/ixsm, $line;
+  $thecount += @words - 1;
   $line = <>;
   last if !defined $line;
 }
-print "Number of lines containing 'the' (case-insensitive): $thecount\n";
+print "Number of 'the's (case-insensitive): $thecount\n";
