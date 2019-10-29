@@ -12,7 +12,7 @@ if ( !defined $line ) {
 }
 my @words;
 while ( $line ne q{} ) {
-  @words = split /\bthe\b/ixsm, $line;
+  @words = split /\bthe\b/isxm, $line;
   $thecount += @words - 1;
   $line = <>;
   last if !defined $line;

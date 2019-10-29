@@ -6,7 +6,7 @@ my $wordcount = 0;
 my $line      = <>;
 while ( $line ne q{} ) {
   chomp $line;
-  my @array = split /[\t ]+/mxs, $line;
+  my @array = split /[\t ]+/msx, $line;
   $wordcount += ( @array > 0 && $array[0] eq q{} ? @array - 1 : @array );
   $line = <>;
   if ( !defined $line ) {

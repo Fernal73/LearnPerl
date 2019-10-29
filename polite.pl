@@ -4,7 +4,7 @@ use warnings;
 our $VERSION = '1.00';
 print "Ask me a question politely:\n";
 my $question = <>;
-if ( $question =~ /please/ms ) {
+if ( $question =~ /please/mxs ) {
   print "Thank you for being polite!\n";
 }
 else {
