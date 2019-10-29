@@ -37,3 +37,4 @@ cat *.txt | ./thecount.pl
 echo | ./thecount.pl
 echo -n '' | ./thecount.pl
 ./isnumber.pl < numbers.txt
+cat dates.txt | ./isdate.pl
