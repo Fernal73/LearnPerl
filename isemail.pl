@@ -6,7 +6,7 @@ my $email;
 while ( $email = <> ) {
   last if !defined $email;
   chomp $email;
-  if ( $email =~ /^[\w-]+(?:\.[\w-]+)*@(?:[\w-]+\.)+[a-zA-Z]{2,7}$/mxs ) {
+  if ( $email =~ /^[\w-]+(?:[.][\w-]+)*@(?:[\w-]+[.])+[:alpha:]{2,7}$/mxs ) {
     print "$email is a legal email address.\n";
   }
   else {
