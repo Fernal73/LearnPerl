@@ -39,3 +39,4 @@ echo -n '' | ./thecount.pl
 ./isnumber.pl < numbers.txt
 cat dates.txt | ./isdate.pl
 cat unformatted.txt | ./whitespace.pl
+./multby2.pl  mult.txt num.txt num2.txt empty.txt words.txt eords.txt
