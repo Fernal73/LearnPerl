@@ -42,3 +42,4 @@ cat unformatted.txt | ./whitespace.pl
 ./multby2.pl  mult.txt empty.txt words.txt eords.txt
 ./lines.pl
 ./fmtdate.pl < dates.txt
+./flavor.pl

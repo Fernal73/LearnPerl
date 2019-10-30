@@ -22,3 +22,8 @@ allow = $@ $!
 
 [ValuesAndExpressions::RequireNumberSeparators]
 min_value = 100000
+
+[ControlStructures::ProhibitPostfixControls]
+allow = for if until
+flowcontrol = warn die carp croak cluck confess goto exit
+
