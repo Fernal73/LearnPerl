@@ -7,8 +7,8 @@ while ( $date = <> ) {
   last if !defined $date;
   chomp $date;
   print "$date\n";
-  my $match = $date =~ m#^(\d{2,4})([\W])(\d{2})\1(\d{2})$#xsm;
+  my $match = $date =~ m#^(\d{2}|\d{4})([\W])(\d{2})\2(\d{2})$#xsm;
   print "$match\n";
-  $date =~ s#^(\d{2,4})([\W])(\d{2})\1(\d{2})$#$1-$3-$4#xsm;
+  $date =~ s#^(\d{2}|\d{4})([\W])(\d{2})\2(\d{2})$#$1-$3-$4#xsm;
   print "$date\n";
 }
