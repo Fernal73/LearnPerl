@@ -40,3 +40,4 @@ echo -n '' | ./thecount.pl
 cat dates.txt | ./isdate.pl
 cat unformatted.txt | ./whitespace.pl
 ./multby2.pl  mult.txt empty.txt words.txt eords.txt
+./lines.pl
