@@ -43,3 +43,10 @@ cat unformatted.txt | ./whitespace.pl
 ./lines.pl
 ./fmtdate.pl < dates.txt
 ./flavor.pl
+./revsort.pl < words.txt
+./engequiv.pl < num1.txt
+./engequiv.pl < num.txt
+./engequiv.pl < num2.txt
+./engequiv.pl < largenum.txt
+./engequiv.pl < largernum.txt
+./engequiv.pl < largenuma.txt

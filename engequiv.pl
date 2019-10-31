@@ -55,24 +55,24 @@ my $digit2;
 my $digit3;
 
 sub digitalise {
-  given($oddlot) {
-    when(1) {
-    $digit1 = 0;
-    $digit2 = 0;
-    $digit3 = $digits[0];
-    $count += 1;
+  given ($oddlot) {
+    when (1) {
+      $digit1 = 0;
+      $digit2 = 0;
+      $digit3 = $digits[0];
+      $count += 1;
     }
-    when(2) {
-    $digit1 = 0;
-    $digit2 = $digits[0];
-    $digit3 = $digits[1];
-    $count += 2;
+    when (2) {
+      $digit1 = 0;
+      $digit2 = $digits[0];
+      $digit3 = $digits[1];
+      $count += 2;
     }
     default {
-    $digit1 = $digits[$count];
-    $digit2 = $digits[$count + 1];
-    $digit3 = $digits[$count + 2];
-    $count += 3;
+      $digit1 = $digits[$count];
+      $digit2 = $digits[$count + 1];
+      $digit3 = $digits[$count + 2];
+      $count += 3;
     }
   }
   return 1;
