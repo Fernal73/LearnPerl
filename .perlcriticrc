@@ -27,3 +27,5 @@ min_value = 100000
 allow = for if until
 flowcontrol = warn die carp croak cluck confess goto exit
 
+[TestingAndDebugging::ProhibitNoWarnings]
+allow = experimental
