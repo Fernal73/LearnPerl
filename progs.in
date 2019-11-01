@@ -50,3 +50,4 @@ cat unformatted.txt | ./whitespace.pl
 ./engequiv.pl < largenum.txt
 ./engequiv.pl < largernum.txt
 ./engequiv.pl < largenuma.txt
+./alias.pl
