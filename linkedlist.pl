@@ -6,7 +6,6 @@ our $VERSION = '1.00';
 
 # initialize list to empty
 my $header = q{};
-my $tail   = q{};
 my %wordlist;
 
 sub add_word_to_list {
@@ -51,7 +50,7 @@ sub print_list {
   my ($pointer);
   print "Words in this file:\n";
   $pointer = $header;
-  while ( $pointer ne q{} && $pointer ne $tail ) {
+  while ( $pointer ne q{}) {
     print "$pointer\n";
     $pointer = $wordlist{$pointer};
   }
@@ -74,7 +73,6 @@ while ( my $line = <> ) {
     # convert all words to lower case
     $word =~ tr/[[:upper:]]/[[:lower:]]/;
     add_word_to_list($word);
-    $lastword = $word;
   }
 }
 print_list;
