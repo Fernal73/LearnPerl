@@ -57,7 +57,6 @@ sub print_list {
   return;
 }
 
-my $lastword;
 while ( my $line = <> ) {
 
   last if !defined $line;
