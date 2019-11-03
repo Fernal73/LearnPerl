@@ -54,3 +54,7 @@ cat unformatted.txt | ./whitespace.pl
 ./sortnum.pl
 ./predefined.pl
 ./linkedlist.pl < words.txt
+./vowels.pl < words.txt
+./vowels.pl < empty.txt
+./vowels.pl < lines.txt
+./print.pl
