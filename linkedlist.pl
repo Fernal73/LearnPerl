@@ -50,7 +50,7 @@ sub print_list {
   my ($pointer);
   print "Words in this file:\n";
   $pointer = $header;
-  while ( $pointer ne q{}) {
+  while ( $pointer ne q{} ) {
     print "$pointer\n";
     $pointer = $wordlist{$pointer};
   }

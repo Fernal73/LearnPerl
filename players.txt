@@ -1,0 +1,9 @@
+Gehrig player 2164 493 1991 .340
+
+Ruth player 2503 714 2217 .342
+
+Grove pitcher 616 300 3.05
+
+Williams player 2292 521 1839 .344
+
+Koufax pitcher 397 165 2.76
