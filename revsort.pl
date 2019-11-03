@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 use Carp qw(croak);
-use 5.16.0;
+use 5.016;
 our $VERSION = '1.00';
 
 my $line = <>;

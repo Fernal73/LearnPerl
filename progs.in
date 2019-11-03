@@ -58,3 +58,4 @@ cat unformatted.txt | ./whitespace.pl
 ./vowels.pl < empty.txt
 ./vowels.pl < lines.txt
 ./print.pl
+./occur.pl < words.txt
