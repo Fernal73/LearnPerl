@@ -1,0 +1,6 @@
+Consolidated Widgets, Inc.
+John Doe#Feb 11, 1994
+1 flying widget:171.42
+1 crawling widget:89.99
+Mary Smith#May 4, 1994
+2 swimming widgets:203.43
