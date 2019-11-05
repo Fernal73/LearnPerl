@@ -59,3 +59,5 @@ cat unformatted.txt | ./whitespace.pl
 ./vowels.pl < lines.txt
 ./print.pl
 ./occur.pl < words.txt
+./report.pl < orders.txt
+./report.pl < empty.txt

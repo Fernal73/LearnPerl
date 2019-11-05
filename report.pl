@@ -5,7 +5,8 @@ use Perl6::Form;
 use Carp qw(croak);
 our $VERSION = '1.00';
 
-my $company       = <>;
+my $company = <>;
+croak 'No data input.' if !defined $company;
 my $companyformat = form
   '************* {||||||||||||||||||||||||||||||} *************',
   $company;
