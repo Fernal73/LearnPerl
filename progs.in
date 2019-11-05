@@ -61,3 +61,4 @@ cat unformatted.txt | ./whitespace.pl
 ./occur.pl < words.txt
 ./report.pl < orders.txt
 ./report.pl < empty.txt
+./printupper.pl
