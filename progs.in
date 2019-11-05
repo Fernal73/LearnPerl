@@ -63,3 +63,4 @@ cat unformatted.txt | ./whitespace.pl
 ./report.pl < empty.txt
 ./printupper.pl
 ./listfileattrs.pl
+./random.pl

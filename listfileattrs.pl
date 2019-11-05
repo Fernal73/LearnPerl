@@ -40,9 +40,9 @@ sub print_fileattrs {    ## no critic (ProhibitExcessComplexity)
       if ( -e _ );
     print "File is readable.\n"
       if ( -r _ );
-    my $size = ( -s _);
+    my $size = ( -s _ );
     print "File is non-empty with $size bytes.\n"
-      if ( $size );
+      if ($size);
     print "File is terminal.\n"
       if ( is_interactive($file) );
     print "File is binary.\n"
