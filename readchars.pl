@@ -7,6 +7,7 @@ our $VERSION = '1.00';
 start_hot_keys();
 while (1) {
   my $char = getc STDIN;
+  last if !defined $char;
   last if $char eq q{\\};
   $char =~ tr/a-zA-Z0-9/b-zaB-ZA1-90/;
   print $char;

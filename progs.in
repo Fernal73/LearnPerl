@@ -65,3 +65,4 @@ cat unformatted.txt | ./whitespace.pl
 ./listfileattrs.pl
 ./random.pl
 ./total.pl < total.txt
+./readchars.pl < words.txt
